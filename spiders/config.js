@@ -19,7 +19,7 @@ module.exports = {
   segmentfault: {
     urls: {
       login: 'https://segmentfault.com/user/login',
-      editor: 'https://segmentfault.com/write'
+      editor: 'https://segmentfault.com/write?freshman=1'
     },
     loginSel: {
       username: 'input[name="username"]',
@@ -27,9 +27,9 @@ module.exports = {
       submit: 'button[type="submit"]'
     },
     editorSel: {
-      title: '#myTitle',
-      content: '#myEditor',
-      publish: '#publishIt'
+      title: '#title',
+      content: '.CodeMirror',
+      publish: '#sureSubmitBtn'
     }
   },
 
@@ -53,7 +53,7 @@ module.exports = {
   csdn: {
     urls: {
       login: '',
-      editor: 'https://mp.csdn.net/postedit'
+      editor: 'https://mp.csdn.net/postedit?not_checkout=1'
     },
     loginSel: {
       username: '',
@@ -143,6 +143,23 @@ module.exports = {
       title: '#topic_title',
       content: '#editor',
       publish: '.super.normal.button'
+    }
+  },
+
+  wechat: {
+    urls: {
+      login: '',
+      editor: 'https://mp.weixin.qq.com',
+      apiEndpoint: 'https://api.weixin.qq.com/cgi-bin'
+    },
+    loginSel: {
+      username: '',
+      password: ''
+    },
+    editorSel: {
+      title: '',
+      content: '',
+      publish: ''
     }
   }
 }
